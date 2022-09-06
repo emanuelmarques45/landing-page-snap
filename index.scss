@@ -62,16 +62,16 @@ header {
         position: absolute;
         top: 0;
         right: 0;
+        margin-top: 10vh;
         height: 90vh;
         width: 70vw;
-        margin-top: 10vh;
         display: flex;
         flex-direction: column;
         font-size: .85rem;
         background-color: $color-white;
         overflow-y: scroll;
-        transform: translate(100%);
-        transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+        transform: translate(150%);
+        transition: transform 1s cubic-bezier(0.075, 0.82, 0.165, 1);
 
         &.--active {
             transform: translate(0);
@@ -118,7 +118,7 @@ header {
                     align-items: center;
                     padding: .5rem 2rem;
                     cursor: pointer;
-                    transition: all .3s;
+                    transition: color .3s;
                     color: $color-gray;
 
                     &:hover {
@@ -143,7 +143,7 @@ header {
             & [data-caret] {
 
                 & img {
-                    transition: all .2s;
+                    transition: transform .2s;
                 }
 
                 & img.--active {
@@ -152,14 +152,16 @@ header {
             }
 
             & [data-nested] {
-                // display: block;
+                opacity: 0;
                 height: 0;
                 margin: 0;
                 overflow: hidden;
                 visibility: hidden;
-                transition: all .6s;
+                transition-duration: .6s;
+                transition-property: opacity, height, overflow;
 
                 &.--active {
+                    opacity: 1;
                     height: initial;
                     margin-top: 1.5rem;
                     overflow: visible;
@@ -186,7 +188,7 @@ header {
             & .btn-login {
                 background-color: transparent;
                 color: $color-gray;
-                transition: all .3s;
+                transition: background-color, color .3s;
 
                 &:hover {
                     color: $color-black;
@@ -197,7 +199,8 @@ header {
                 background-color: transparent;
                 color: $color-gray;
                 border: 2px solid $color-gray;
-                transition: all .3s;
+                transition-property: background-color, color, box-shadow;
+                transition-duration: .3s;
 
                 &:hover {
                     color: $color-black;
@@ -266,7 +269,7 @@ main {
     display: flex;
     flex-direction: column;
     margin-top: 15vh;
-    
+
     & .main__content {
         display: flex;
         flex-direction: column;
@@ -284,7 +287,7 @@ main {
             line-height: 1.5;
             font-size: .9rem;
         }
-        
+
         & .clients-list {
             display: flex;
             align-items: center;
@@ -293,6 +296,7 @@ main {
             & img {
                 width: 4.5rem;
             }
+
             & li:nth-child(2) img {
                 height: 1.5rem;
                 width: 3rem;
@@ -309,7 +313,7 @@ main {
             background-color: $color-black;
             color: $color-white;
             border: 2px solid $color-black;
-            transition: all .3s;
+            transition: background-color .3s, color .3s;
 
             &:hover {
                 background-color: transparent;
@@ -328,7 +332,7 @@ main {
     background-color: $color-black-muted;
     pointer-events: none;
     opacity: 0;
-    transition: all .4s;
+    transition: opacity .4s;
 
     &.--active {
         pointer-events: initial;
@@ -362,6 +366,7 @@ footer {
             height: unset;
             transform: translate(0);
             background-color: transparent;
+            transition: none;
 
             & .nav__menu {
                 flex-direction: row;
@@ -393,7 +398,7 @@ footer {
                 }
 
                 & .menu__item:not(:last-child) {
-                    margin:0 1rem;
+                    margin: 0 1rem;
                 }
 
                 & .nav__submenu {
@@ -403,12 +408,12 @@ footer {
                     top: 2.5rem;
                     right: -1rem;
                     box-shadow: 1px 1px 20px $color-gray;
-                    
+
                     &.--active {
                         border-radius: 1rem;
                         background-color: $color-white;
                     }
-                    
+
                     & .nav__submenu-item {
                         justify-content: center;
                         padding: .8rem 1.5rem;
@@ -416,7 +421,7 @@ footer {
 
                     & .nav__submenu-item:not(:last-child) {
                         margin-bottom: 0rem;
-                    }    
+                    }
                 }
             }
 
@@ -458,7 +463,7 @@ footer {
             & section {
                 display: flex;
                 flex-direction: column;
-                
+
             }
 
             & h1 {

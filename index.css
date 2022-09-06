@@ -53,16 +53,16 @@ header nav {
   position: absolute;
   top: 0;
   right: 0;
+  margin-top: 10vh;
   height: 90vh;
   width: 70vw;
-  margin-top: 10vh;
   display: flex;
   flex-direction: column;
   font-size: 0.85rem;
   background-color: rgb(250, 250, 250);
   overflow-y: scroll;
-  transform: translate(100%);
-  transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transform: translate(150%);
+  transition: transform 1s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 header nav.--active {
   transform: translate(0);
@@ -104,7 +104,7 @@ header nav .nav__menu .nav__submenu .nav__submenu-item {
   align-items: center;
   padding: 0.5rem 2rem;
   cursor: pointer;
-  transition: all 0.3s;
+  transition: color 0.3s;
   color: rgb(105, 105, 105);
 }
 header nav .nav__menu .nav__submenu .nav__submenu-item:hover {
@@ -121,19 +121,22 @@ header nav .nav__menu .nav__submenu .nav__submenu-item img {
   width: 1.4rem;
 }
 header nav .nav__menu [data-caret] img {
-  transition: all 0.2s;
+  transition: transform 0.2s;
 }
 header nav .nav__menu [data-caret] img.--active {
   transform: rotate(180deg);
 }
 header nav .nav__menu [data-nested] {
+  opacity: 0;
   height: 0;
   margin: 0;
   overflow: hidden;
   visibility: hidden;
-  transition: all 0.6s;
+  transition-duration: 0.6s;
+  transition-property: opacity, height, overflow;
 }
 header nav .nav__menu [data-nested].--active {
+  opacity: 1;
   height: initial;
   margin-top: 1.5rem;
   overflow: visible;
@@ -156,7 +159,7 @@ header nav .container-buttons button {
 header nav .container-buttons .btn-login {
   background-color: transparent;
   color: rgb(105, 105, 105);
-  transition: all 0.3s;
+  transition: background-color, color 0.3s;
 }
 header nav .container-buttons .btn-login:hover {
   color: rgb(20, 20, 20);
@@ -165,7 +168,8 @@ header nav .container-buttons .btn-register {
   background-color: transparent;
   color: rgb(105, 105, 105);
   border: 2px solid rgb(105, 105, 105);
-  transition: all 0.3s;
+  transition-property: background-color, color, box-shadow;
+  transition-duration: 0.3s;
 }
 header nav .container-buttons .btn-register:hover {
   color: rgb(20, 20, 20);
@@ -256,7 +260,7 @@ main .main__content .btn-learn-more {
   background-color: rgb(20, 20, 20);
   color: rgb(250, 250, 250);
   border: 2px solid rgb(20, 20, 20);
-  transition: all 0.3s;
+  transition: background-color 0.3s, color 0.3s;
 }
 main .main__content .btn-learn-more:hover {
   background-color: transparent;
@@ -272,7 +276,7 @@ main .main__content .btn-learn-more:hover {
   background-color: rgba(0, 0, 0, 0.8);
   pointer-events: none;
   opacity: 0;
-  transition: all 0.4s;
+  transition: opacity 0.4s;
 }
 .overlay.--active {
   pointer-events: initial;
@@ -303,6 +307,7 @@ footer p {
     height: unset;
     transform: translate(0);
     background-color: transparent;
+    transition: none;
   }
   header nav .nav__menu {
     flex-direction: row;
