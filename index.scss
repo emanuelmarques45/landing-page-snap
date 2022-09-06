@@ -8,6 +8,7 @@
     border: 0;
     box-sizing: border-box;
     list-style-type: none;
+    text-decoration: none;
     font-family: 'Epilogue', sans-serif;
 }
 
@@ -338,6 +339,12 @@ main {
 footer {
     margin-top: 5rem;
     text-align: center;
+    padding: .5rem;
+
+    & p {
+        font-size: 1rem;
+        color: $color-black;
+    }
 }
 
 @media(min-width: 800px) {
@@ -438,7 +445,7 @@ footer {
         justify-content: center;
 
         & .illustration {
-            width: 28rem;
+            width: 25rem;
         }
 
         & .main__content {

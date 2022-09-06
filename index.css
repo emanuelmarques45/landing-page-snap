@@ -7,6 +7,7 @@
   border: 0;
   box-sizing: border-box;
   list-style-type: none;
+  text-decoration: none;
   font-family: "Epilogue", sans-serif;
 }
 
@@ -281,6 +282,11 @@ main .main__content .btn-learn-more:hover {
 footer {
   margin-top: 5rem;
   text-align: center;
+  padding: 0.5rem;
+}
+footer p {
+  font-size: 1rem;
+  color: rgb(20, 20, 20);
 }
 
 @media (min-width: 800px) {
@@ -363,7 +369,7 @@ footer {
     justify-content: center;
   }
   main .illustration {
-    width: 28rem;
+    width: 25rem;
   }
   main .main__content {
     max-width: 50%;
