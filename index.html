@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Snap Landing Page</title>
+
+  <link rel="stylesheet" href="index.css">
+
+  <script defer async src="./index.js"></script>
+
+</head>
+
+<body>
+
+  <header>
+    <figure>
+      <img class="header__logo" src="images/logo.svg" alt="Snap Logo">
+    </figure>
+    <nav>
+
+      <ul class="nav__menu">
+        <li class="menu__item">
+          <span data-caret>
+            Features
+            <img src="./images/icon-arrow-down.svg">
+          </span>
+          <ul class="nav__submenu" data-nested>
+            <li class="nav__submenu-item">
+              <img src="./images/icon-todo.svg">
+              <span>Todo List</span>
+            </li>
+            <li class="nav__submenu-item">
+              <img src="./images/icon-calendar.svg">
+              <span>Calendar</span>
+            </li>
+            <li class="nav__submenu-item">
+              <img src="./images/icon-reminders.svg">
+              <span>Reminders</span>
+            </li>
+            <li class="nav__submenu-item">
+              <img src="./images/icon-planning.svg">
+              <span>Planning</span>
+            </li>
+          </ul>
+        </li>
+        <li class="menu__item">
+          <span data-caret>
+            Company
+            <img src="./images/icon-arrow-down.svg">
+          </span>
+          <ul class="nav__submenu" data-nested="">
+            <li class="nav__submenu-item">History</li>
+            <li class="nav__submenu-item">Our Team</li>
+            <li class="nav__submenu-item">Blog</li>
+          </ul>
+        </li>
+        <li class="menu__item">
+          <span>Careers</span>
+        </li>
+        <li class="menu__item">
+          <span>About</span>
+        </li>
+      </ul>
+
+      <div class="container-buttons">
+        <button class="btn-login">Login</button>
+        <button class="btn-register">Register</button>
+      </div>
+    </nav>
+
+    <input type="checkbox" id="menu-toggle">
+
+    <label class="menu-mobile-container" for="menu-toggle">
+      <div id="menu-mobile__button"></div>
+    </label>
+  </header>
+
+  <main>
+    <picture>
+      <source media="(max-width:800px)" srcset="./images/image-hero-mobile.png">
+      <img class="illustration" src="./images/image-hero-desktop.png" alt="Could not be loaded">
+    </picture>
+
+    <div class="main__content">
+
+      <section>
+        <h1>Make remote work</h1>
+
+        <p class="text">
+          Get your team in sync, no matter your location. Streamline processes,
+          create team rituals, and watch productivity soar.
+  
+        </p>
+        
+        <button class="btn-learn-more">Learn more</button>
+  
+      </section>
+
+      <ul class="clients-list">
+        <li><img src="./images/client-databiz.svg" alt="Could not be loaded"></li>
+        <li><img src="./images/client-audiophile.svg" alt="Could not be loaded"></li>
+        <li><img src="./images/client-meet.svg" alt="Could not be loaded"></li>
+        <li><img src="./images/client-maker.svg" alt="Could not be loaded"></li>
+      </ul>
+    </div>
+
+  </main>
+
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Emanuel Marques</a>.
+    </div>
+  </footer>
+
+  <div class="overlay"></div>
+</body>
+
+</html>
