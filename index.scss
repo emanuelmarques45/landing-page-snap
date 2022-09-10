@@ -290,6 +290,7 @@ main {
             color: $color-gray;
             line-height: 1.5;
             font-size: .9rem;
+            margin: 0 auto;
         }
 
         & .clients-list {
@@ -312,7 +313,7 @@ main {
             font-weight: 700;
             width: 40vw;
             border-radius: 1rem;
-            padding: 1rem;
+            padding: .9rem;
             margin: 2rem 0;
             background-color: $color-black;
             color: $color-white;
@@ -473,25 +474,25 @@ footer {
                 display: flex;
                 flex-direction: column;
 
+                & h1 {
+                    font-size: min(5rem, 6vw);
+                    max-width: 98%;
+                    margin: min(3rem, 3vw) 0;
+                    text-align: left;
+                }
+    
+                & p.text {
+                    text-align: left;
+                    max-width: 70%;
+                }
+    
+                .btn-learn-more {
+                    justify-self: flex-start;
+                    width: 10rem;
+                    font-size: .9rem;
+                }
             }
 
-            & h1 {
-                font-size: min(5rem, 6vw);
-                max-width: 98%;
-                margin: min(3rem, 3vw) 0;
-                text-align: left;
-            }
-
-            & p.text {
-                text-align: left;
-                max-width: 70%;
-            }
-
-            .btn-learn-more {
-                justify-self: flex-start;
-                width: 10rem;
-                font-size: .9rem;
-            }
 
             & .clients-list {
                 gap: 2rem;
