@@ -39,7 +39,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: https://www.frontendmentor.io/solutions/responsive-landing-page-snap-YC99Ae1Nnq
-- Live Site URL: https://emanuelm45.github.io/landing-page-snap/
+- Live Site URL: https://emanuelmarques45.github.io/landing-page-snap/
 
 ## My process
 
