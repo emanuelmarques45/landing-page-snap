@@ -28,13 +28,13 @@ Users should be able to:
 
 #### Desktop Layout
 
-![Desktop](https://github.com/emanuelm45/portfolio-images/blob/main/landing-page-snap/desktop.png)
-![Desktop-2](https://github.com/emanuelm45/portfolio-images/blob/main/landing-page-snap/desktop2.png)
+![Desktop](https://github.com/emanuelmarques45/portfolio-images/blob/main/landing-page-snap/desktop.png)
+![Desktop-2](https://github.com/emanuelmarques45/portfolio-images/blob/main/landing-page-snap/desktop2.png)
 
 #### Mobile Layout
 
-![Mobile](https://github.com/emanuelm45/portfolio-images/blob/main/landing-page-snap/mobile.png)
-![Mobile-2](https://github.com/emanuelm45/portfolio-images/blob/main/landing-page-snap/mobile2.png)
+![Mobile](https://github.com/emanuelmarques45/portfolio-images/blob/main/landing-page-snap/mobile.png)
+![Mobile-2](https://github.com/emanuelmarques45/portfolio-images/blob/main/landing-page-snap/mobile2.png)
 
 ### Links
 
